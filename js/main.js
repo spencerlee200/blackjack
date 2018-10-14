@@ -4,7 +4,7 @@ var deckID;
 
 var getDeckID = function(){
   $.ajax({
-    url: "http://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6",
+    url: "https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=6",
     type: 'get',
     dataType: 'json',
     success: function(response) {
@@ -22,7 +22,7 @@ getDeckID();
 
 var getDeck = function(){
   $.ajax({
-    url: "http://deckofcardsapi.com/api/deck/" + deckID + "/draw/?count=2",
+    url: "https://deckofcardsapi.com/api/deck/" + deckID + "/draw/?count=2",
     type: 'get',
     dataType: 'json',
     success: function(response) {
